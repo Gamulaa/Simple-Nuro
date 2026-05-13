@@ -1,0 +1,14 @@
+fetch("https://api.chapa.co/v1/transaction/initialize", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer YOUR_SECRET_KEY"
+  },
+  body: JSON.stringify({
+    amount: "100",
+    currency: "ETB",
+    email: "user@gmail.com"
+  })
+})
+.then(res => res.json())
+.then(data => console.log(data));
