@@ -1,0 +1,10 @@
+import React from 'react';
+import { View, Text } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={{ marginTop: 50 }}>
+      <Text>Simple Nuro Mobile App</Text>
+    </View>
+  );
+}
